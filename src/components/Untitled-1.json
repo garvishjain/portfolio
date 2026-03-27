@@ -1,0 +1,227 @@
+{
+  "Module": [
+    {
+      "Name": "Order",
+      "ProcessingType": "apiprocessing"
+    },
+    {
+      "Name": "AvailableStock",
+      "ProcessingType": "apiprocessing"
+    },
+    {
+      "Name": "PurchaseInvoice",
+      "ProcessingType": "apiprocessing"
+    },
+    {
+      "Name": "Billing",
+      "ProcessingType": "apiprocessing"
+    }
+  ],
+  "ScanType": "voucher",
+  "BarcodeScanWithDistributorWies": "true",
+  "APIConfig": {
+    "URL": "https://merinoindustriesuat.eazydms.in/api/getBarCodeDetail_GreenPly",
+    "Method": "POST",
+    "Header": {},
+    "Body": {
+      "TransactionType": "",
+      "Barcode": "",
+      "BarcodeType": "",
+      "DistributorCode": ""
+    }
+  },
+  "APIBarCodeValidating": {
+    "URL": "https://merinoindustriesuat.eazydms.in/api/BarCodeValidating",
+    "Method": "POST",
+    "Header": {},
+    "Body": {
+      "TransactionType": "",
+      "Barcode": "",
+      "BarcodeType": "",
+      "DistributorCode": ""
+    }
+  },
+  "APIBarCodeRelease": {
+    "URL": "https://merinoindustriesuat.eazydms.in/api/BarCodeRelease",
+    "Method": "POST",
+    "Header": {},
+    "Body": {
+      "TransactionType": "",
+      "Barcode": "",
+      "BarcodeType": "",
+      "DistributorCode": ""
+    }
+  },
+  "APIResponseConfig": {
+    "ItemIdentification": "ItemCode",
+    "Quantity": "Qty",
+    "MRP": "MRP"
+  },
+  "TextExtraction": {
+    "ItemIdentification": {
+      "StartIndex": 0,
+      "EndIndex": 10,
+      "Length": 10
+    },
+    "SerialConfig": {
+      "StartIndex": 0,
+      "EndIndex": 10,
+      "Length": 10
+    },
+    "BatchConfig": {
+      "StartIndex": 0,
+      "EndIndex": 10,
+      "Length": 10
+    },
+    "MRPConfig": {
+      "StartIndex": 0,
+      "EndIndex": 10,
+      "Length": 10
+    },
+    "MFGDateConfig": {
+      "StartIndex": 0,
+      "EndIndex": 10,
+      "Length": 10,
+      "Format": "DDMMM"
+    },
+    "EXPDateConfig": {
+      "StartIndex": 0,
+      "EndIndex": 10,
+      "Length": 10,
+      "Format": "DDMMM"
+    }
+  },
+  "CustomConfig": {
+    "ValidateWith": "ItemCode"
+  },
+  "SchemeMasterConfig": {
+    "URL": "https://merinoindustriesuat.eazydms.in/api/getSchemeMaster",
+    "Method": "POST",
+    "IsShowScheme": "true",
+    "Header": {},
+    "Body": {
+      "DesignationName": "",
+      "LedgerCode": ""
+    }
+  },
+  "SchemeResultConfig": {
+    "URL": "https://merinoindustriesuat.eazydms.in/api/getSchemeGroupDetail",
+    "Method": "POST",
+    "IsShowScheme": "true",
+    "Header": {},
+    "Body": {
+      "DesignationName": "",
+      "LedgerCode": ""
+    }
+  },
+  "showschemavisibility": true,
+  "InnovativeRedeemURL": "",
+  "InnovativeRedeemFullURL": "",
+"DashboardImages": [
+    "https://dmssync.blob.core.windows.net/merino/21f5cc05_53a0_4d12_a017_29ad65a15fc6_engnew.png",
+    "https://dmssync.blob.core.windows.net/merino/a82af854_62f8_4055_ab5e_929b302afd61_hindinew.png"
+  ],
+  "TalkToUsModule": [
+    {
+      "contactname": "Customer Care 1",
+      "contactnumber": "011-45557071",
+      "iconimageurl": ""
+    },
+    {
+      "contactname": "Customer Care 2",
+      "contactnumber": "080-69056500",
+      "iconimageurl": ""
+    }
+  ],
+  "LearningCenter": [
+    {
+      "title": "How to do Videos - Laminates",
+      "data": [
+        {
+          "id": 1,
+          "title": "Merino laminates Precaution from Cracking",
+          "timeline": "2 min 24 sec",
+          "image": "https://i3.ytimg.com/vi/Ond1QC1B67c/maxresdefault.jpg",
+          "advert_url": "https://www.youtube.com/watch?v=Ond1QC1B67c",
+          "video_type": "youtube",
+          "advert_type": "video"
+        },
+        {
+          "id": 2,
+          "title": "How to remove bubble from laminate surface",
+          "timeline": "2 min 24 sec",
+          "image": "https://i3.ytimg.com/vi/za7LHt8jN00/maxresdefault.jpg",
+          "advert_url": "https://www.youtube.com/watch?v=za7LHt8jN00",
+          "video_type": "youtube",
+          "advert_type": "video"
+        },
+        {
+          "id": 3,
+          "title": "Merino Laminates | 20 Sec MR+ TVC",
+          "timeline": "2 min 24 sec",
+          "image": "https://i3.ytimg.com/vi/T2WCewBnmt4/maxresdefault.jpg",
+          "advert_url": "https://www.youtube.com/watch?v=T2WCewBnmt4",
+          "video_type": "youtube",
+          "advert_type": "video"
+        },
+        {
+          "id": 4,
+          "title": "Merino Imagino - A Customised Digital Laminate",
+          "timeline": "4 min 47 sec",
+          "image": "https://i3.ytimg.com/vi/Qy3jTL7bmjo/maxresdefault.jpg",
+          "advert_url": "https://www.youtube.com/watch?v=Qy3jTL7bmjo",
+          "video_type": "youtube",
+          "advert_type": "video"
+        }
+      ]
+    },
+    {
+      "title": "How to do Videos - Marine Boards",
+      "data": [
+        {
+          "id": 1,
+          "title": "Merino laminates Precaution from Cracking",
+          "timeline": "0 min 45 sec",
+          "image": "https://i3.ytimg.com/vi/cfrpP-RO7P0/maxresdefault.jpg",
+          "advert_url": "https://youtu.be/cfrpP-RO7P0",
+          "video_type": "youtube",
+          "advert_type": "video"
+        },
+        {
+          "id": 2,
+          "title": "How to remove bubble from laminate surface",
+          "timeline": "0 min 40 sec",
+          "image": "https://i3.ytimg.com/vi/LUVxMJN6dN0/maxresdefault.jpg",
+          "advert_url": "https://youtu.be/LUVxMJN6dN0",
+          "video_type": "youtube",
+          "advert_type": "video"
+        },
+        {
+          "id": 3,
+          "title": "Merino Laminates | 20 Sec MR+ TVC",
+          "timeline": "0 min 45 sec",
+          "image": "https://i3.ytimg.com/vi/y78eTv-GvA4/maxresdefault.jpg",
+          "advert_url": "https://youtu.be/y78eTv-GvA4",
+          "video_type": "youtube",
+          "advert_type": "video"
+        }
+      ]
+    },
+    {
+      "title": "Latest Member Schemes",
+      "data": []
+    },
+    {
+      "title": "Program Policy",
+      "data": []
+    },
+    {
+      "title": "Product Videos",
+      "data": []
+    },
+    {
+      "title": "New Product Films",
+      "data": []
+    }
+  ]
+}
