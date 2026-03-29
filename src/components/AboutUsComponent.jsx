@@ -7,7 +7,7 @@ import { FaDownload } from "react-icons/fa";
 
 function AboutUs() {
     return (
-        <div id='aboutus' className="relative">
+        <div id='aboutus' className="relative pt-20">
             <img
                 // src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
                 src={mountainImg}
